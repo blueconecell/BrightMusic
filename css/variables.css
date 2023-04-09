@@ -4,4 +4,11 @@
   --main-border: 1px solid rgba(0, 0, 0, 0.2);
   --gray: rgba(0, 0, 0, 0.5);
   --redPink: #ff5a7b;
+  --brightOrange: #ffd08a;
+  --brightGradient:linear-gradient(black, 90%, var(--brightOrange));
+
+}
+::selection {
+  background: #ffd08a;
+  color: black;
 }

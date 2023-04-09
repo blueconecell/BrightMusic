@@ -3,16 +3,18 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px var(--horizontal-space);
-  margin-bottom: 15px;
+  margin: 35px 0px;
 }
 .screen-header__title {
   font-size: 28px;
   font-weight: 600;
+  text-shadow: var(--brightOrange) 0 3px 18px;
 }
 
 .screen-header__icons {
   margin-top: 10px;
   margin-left: 20px;
+  text-shadow: var(--brightOrange) 0 3px 18px;
 }
 .screen-header__icons i {
   padding: 10px 10px;

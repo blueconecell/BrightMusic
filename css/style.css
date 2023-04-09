@@ -14,16 +14,17 @@
 
 /* Screen */
 @import "screens/login.css";
-@import "screens/friends.css";
+@import "screens/artists.css";
 @import "screens/find.css";
 @import "screens/more.css";
 @import "screens/settings.css";
 @import "screens/chat.css";
 
 body {
-  color: #2e363e;
+  color: var(--brightOrange);
+  height: 100vh;
+  background: black;
   font-family: "Nanum Gothic", sans-serif;
-  /* height: 1000vh; */
 }
 
 .main-screen {
@@ -31,7 +32,7 @@ body {
 }
 
 .welcome-header {
-  margin: 10px 0px;
+  margin: 70px 0px 40px 0px;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -57,30 +58,42 @@ body {
   font-size: 18px;
   padding: 15px 0px;
   margin-bottom: 25px;
+  background-color: black;
+  color: var(--brightOrange);
+  
   /* border-bottom: 1.2px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s ease-in-out; */
 }
 #login-form input:not([type="submit"]) {
-  border-bottom: 1.2px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid var(--brightOrange);
   transition: border-color 0.3s ease-in-out;
 }
+#login-form input:not([type="submit"])::placeholder {
+  color: var(--brightOrange);
+  transition: color 0.3s ease-in-out;
+}
 #login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.2);
+  color: var(--brightOrange);
 }
 #login-form input:focus {
-  border-color: var(--yellow);
+  border-color: orange;
 }
 
 #login-form input[type="submit"] {
-  background-color: var(--yellow);
+  background-color: var(--brightOrange);
+  transition: font-size 0.3s ease-in-out;
+  color: black;
   padding: 20px 0px;
   cursor: pointer;
   border-radius: 5px;
 }
-
+#login-form input[type="submit"]:hover{
+font-size: 20px;
+}
 #login-form a {
   text-align: center;
   text-decoration: none;
   color: inherit;
   font: size 16px;
 }
+

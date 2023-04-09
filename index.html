@@ -5,37 +5,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Kokoa Clone</title>
+    <title>Bright Music</title>
   </head>
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
-        <span>신호 없음</span>
+        <span>No Signal</span>
         <!-- TO do : wifi Icone -->
         <i class="fa-solid fa-wifi"></i>
+      </div> 
+      <div class="status-bar__column">
+        <span>10:27</span>
       </div>
       <div class="status-bar__column">
-        <span>18:43</span>
-      </div>
-      <div class="status-bar__column">
-        <span>26%</span>
-        <!-- Battery Icon -->
+        <span>23%</span>
         <i class="fa-solid fa-battery-quarter fa-xl"></i>
-        <!-- Lighing Icon -->
-        <!-- <i class="fa-solid fa-bolt"> </i> -->
       </div>
     </div>
 
     <header class="welcome-header">
-      <h1 class="welcome-header__title">코코아톡 클론에 오신걸 환영합니다</h1>
-      <p class="welcome-header__text">코코아톡 계정이 있으시다면, <br /><b>이메일</b> 또는 <b>전화번호</b>로 로그인해주세요</p>
+      <h1 class="welcome-header__title">Welcome to Bright Music !</h1>
+      <p class="welcome-header__text">If you have a Bright Music Account, <br><br> log in with your email or phone number.
     </header>
 
-    <form action="friends.html" method="get" id="login-form">
-      <input name="username" type="text" placeholder="이메일 또는 전화번호" />
-      <input name="password" type="password" placeholder="비밀번호" />
+    <form action="Artists.html" method="get" id="login-form">
+      <input name="username" type="text" placeholder="email or Phone number" />
+      <input name="password" type="password" placeholder="Password" />
       <input type="submit" value="Log In" />
-      <a href="#">아이디 또는 비밀번호를 잊으셨습니까?</a>
+      <input type="submit" value="Sing Up" />
+      <input id="skipBtn" type="submit" value="Skip" />
+      <a href="#">Find Bright Music Account or Password</a>
     </form>
     <div id="no-mobile">
       <span>Your screen is too big...😥😥😥😥</span>
