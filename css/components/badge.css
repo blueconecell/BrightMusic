@@ -1,5 +1,5 @@
 .badge {
-  background-color: tomato;
+  background-color: white;
   font-size: 16px;
   width: 25px;
   height: 25px;
@@ -7,17 +7,41 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
   font-weight: 600;
 }
 
 .badge__small-dot {
-  background-color: tomato;
-  width: 6px;
-  height: 6px;
+  background-color: white;
+  width: 8px;
+  height: 8px;
   border-radius: 3px;
   display: flex;
   position: absolute;
   left: 25px;
   bottom: 25px;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+@keyframes heartbeat {
+  from {
+            transform: scale(1);
+            transform-origin: center center;
+            animation-timing-function: ease-out;
+  }
+  10% {
+            transform: scale(0.81);
+            animation-timing-function: ease-in;
+  }
+  17% {
+            transform: scale(0.90);
+            animation-timing-function: ease-out;
+  }
+  33% {
+            transform: scale(0.77);
+            animation-timing-function: ease-in;
+  }
+  45% {
+            transform: scale(1);
+            animation-timing-function: ease-out;
+  }
 }
