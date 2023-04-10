@@ -1,88 +1,53 @@
-.recommended-freinds {
-  margin: 25px 0px;
-  padding: 25px 0px;
-  border-top: var(--main-border);
-  border-bottom: var(--main-border);
-}
-.recommended-freinds__title {
-  font-size: 12px;
-  color: var(--gray);
-}
-.recommended-freinds span {
-  display: block;
-  margin: 100px 0px;
-  text-align: center;
-  font-size: 18px;
-  color: var(--gray);
-}
-.open-chat__header {
+
+.recommend{
   display: flex;
   justify-content: space-between;
-  opacity: 0.8;
-  margin-bottom: 25px;
+  margin-bottom: 60px;
 }
-.open-chat__header span {
+.recommend__musicRow{
   display: flex;
-  color: var(--gray);
+  overflow-x: scroll;
+margin-right: 20px;
 }
-.open-post {
+
+.recommend__musicRow::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: black; /* 또는 트랙에 추가한다 */
+}
+.recommend__musicRow::-webkit-scrollbar-thumb {
+  background: var(--brightOrange);
+  border-radius: 3px;
+  opacity: 40%;
+}
+
+.recommend__musicRow-music{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  margin-right: 15px;
 }
-.open-post__title {
-  font-weight: 600;
-  margin-bottom: 10px;
+.recommend__musicRow-music > p{
+  font-size: 13px;
 }
-.open-post__hashtags {
-  text-transform: uppercase;
-  opacity: 0.6;
-}
-.open-post__members {
-  margin-top: 7px;
-  display: flex;
-  align-items: center;
-}
-.open-post__members img {
-  margin-right: 5px;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-}
-.open-post__members-count {
-  opacity: 0.5;
-  font-size: 14px;
-}
-.open-post__members .divider {
-  width: 1px;
-  height: 15px;
-  margin: 0 5px;
-  background-color: var(--gray);
-}
-.open-post__member-status {
-  color: var(--redPink);
-}
-.open-post__photo {
-  position: relative;
-}
-.open-post__photo img {
-  width: 110px;
-  height: 110px;
+.recommend__musicRow-music > img{
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
   border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 15px 0px var(--brightOrange);
 }
-.open-post__heart-count {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 5px;
-  border-radius: 20px;
+
+.recommend__artits{
   display: flex;
+  flex-direction: column;
   align-items: center;
-  font-size: 14px;
-  font-weight: lighter;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
 }
-.open-post__heart-count span {
-  margin-left: 3px;
+.recommend__artits > img{
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 15px 0px var(--brightOrange);
 }
